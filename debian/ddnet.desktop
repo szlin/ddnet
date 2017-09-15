@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=DDNet
+GenericName=Platform Game
+Comment=A Teeworlds modification with a unique cooperative gameplay
+Exec=DDNet
+Icon=DDNet
+Categories=Game;ArcadeGame;
+Keywords=game;multiplayer;
+Name=ddnet.desktop

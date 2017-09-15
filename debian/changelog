@@ -1,0 +1,5 @@
+ddnet (10.8.6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #794166)
+
+ -- Yangfl <mmyangfl@gmail.com>  Sat, 16 Sep 2017 21:30:00 +0800

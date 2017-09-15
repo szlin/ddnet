@@ -1,0 +1,83 @@
+Source: ddnet
+Section: games
+Priority: optional
+Maintainer: Yangfl <mmyangfl@gmail.com>
+Uploaders:
+ Boyuan Yang <073plan@gmail.com>,
+Build-Depends:
+ debhelper (>= 10),
+ cmake,
+ libcurl4-openssl-dev,
+ libfreetype6-dev,
+ libogg-dev,
+ libopus-dev,
+ libopusfile-dev,
+ libsdl2-dev,
+ libmariadbclient-dev,
+ libmysqlcppconn-dev,
+ libboost-dev,
+Standards-Version: 4.1.0
+Homepage: https://ddnet.tw/
+Vcs-Git: https://anonscm.debian.org/git/pkg-games/ddnet.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/ddnet.git
+
+Package: ddnet
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ddnet-data (= ${source:Version}),
+Description: Teeworlds modification with a unique cooperative gameplay
+ DDraceNetwork (DDNet) is an actively maintained version of DDRace, a Teeworlds
+ modification with a unique cooperative gameplay. Help each other play through
+ custom maps with up to 64 players, compete against the best in international
+ tournaments, design your own maps, or run your own server.
+ .
+ This package contains the client binary for DDNet.
+
+Package: ddnet-server
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ddnet-data (= ${source:Version}),
+Suggests:
+ ddnet-tools,
+Description: Server for DDNet
+ DDraceNetwork (DDNet) is an actively maintained version of DDRace, a Teeworlds
+ modification with a unique cooperative gameplay. Help each other play through
+ custom maps with up to 64 players, compete against the best in international
+ tournaments, design your own maps, or run your own server.
+ .
+ This package contains the server binary for DDNet.
+
+Package: ddnet-tools
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Tools for DDNet
+ DDraceNetwork (DDNet) is an actively maintained version of DDRace, a Teeworlds
+ modification with a unique cooperative gameplay. Help each other play through
+ custom maps with up to 64 players, compete against the best in international
+ tournaments, design your own maps, or run your own server.
+ .
+ This package contains tools for DDNet maps and configs.
+
+Package: ddnet-data
+Architecture: all
+Depends:
+ ${misc:Depends},
+Recommends:
+ fonts-dejavu-core,
+ fonts-wqy-microhei,
+Suggests:
+ ddnet,
+ ddnet-server,
+Description: Data for DDNet
+ DDraceNetwork (DDNet) is an actively maintained version of DDRace, a Teeworlds
+ modification with a unique cooperative gameplay. Help each other play through
+ custom maps with up to 64 players, compete against the best in international
+ tournaments, design your own maps, or run your own server.
+ .
+ This package contains the static data for DDNet.
