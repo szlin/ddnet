@@ -1,9 +1,10 @@
 Source: ddnet
 Section: games
 Priority: optional
-Maintainer: Yangfl <mmyangfl@gmail.com>
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders:
  Boyuan Yang <073plan@gmail.com>,
+ Yangfl <mmyangfl@gmail.com>
 Build-Depends:
  debhelper (>= 10),
  cmake,
