@@ -1,34 +1,199 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ddnet
 Source: https://ddnet.tw/
-Files-Excluded:
- data/fonts/DejaVuSans.ttf
- data/fonts/LICENSE
- other/freetype/include
- other/freetype/lib32
- other/freetype/lib64
- other/sdl/include
- other/sdl/lib32
- other/sdl/lib64
- src/engine/external
- datasrc/*.pyc
 
 Files: *
-Copyright: 2007-2014 Magnus Auvinen
-           2010-2011 Shereef Marzouk
+Copyright: 2007-2014 Magnus Auvinen <magnus.auvinen@gmail.com>
+           2010-2011 Shereef Marzouk <info@shereef.net>
            2013-2017 Dennis Felsing
 License: Zlib
 
 Files: data/*
-Copyright: 2007-2014 Magnus Auvinen
-           2010-2011 Shereef Marzouk
+Copyright: 2007-2014 Magnus Auvinen <magnus.auvinen@gmail.com>
+           2010-2011 Shereef Marzouk <info@shereef.net>
            2013-2017 Dennis Felsing
 License: CC-BY-SA-3.0
+
+Files: src/*
+Copyright: 2007-2014 Magnus Auvinen <magnus.auvinen@gmail.com>
+License: Zlib
+
+Files: src/engine/external/json-parser/*
+Copyright: 2012, 2013 James McLaughlin et al.
+License: BSD-2-clause
+
+Files: src/engine/external/libwebsockets/*
+Copyright: 2010-2013 Andy Green <andy@warmcat.com>
+License: LGPL-2.1
+Comment:
+ Libwebsockets and included programs are provided under the terms of the GNU
+ Library General Public License (LGPL) 2.1, with the following exceptions:
+ .
+ 1) Static linking of programs with the libwebsockets library does not
+ constitute a derivative work and does not require the author to provide 
+ source code for the program, use the shared libwebsockets libraries, or
+ link their program against a user-supplied version of libwebsockets.
+ .
+ If you link the program to a modified version of libwebsockets, then the
+ changes to libwebsockets must be provided under the terms of the LGPL in
+ sections 1, 2, and 4.
+ .
+ 2) You do not have to provide a copy of the libwebsockets license with
+ programs that are linked to the libwebsockets library, nor do you have to
+ identify the libwebsockets license in your program or documentation as
+ required by section 6 of the LGPL.
+ .
+ However, programs must still identify their use of libwebsockets. The
+ following example statement can be included in user documentation to
+ satisfy this requirement:
+ .
+ "[program] is based in part on the work of the libwebsockets  project
+ (http://libwebsockets.org)"
+
+Files: src/engine/external/libwebsockets/sha-1.c
+Copyright: 1995-1997, 1998 WIDE Project.
+License: BSD-3-clause
+
+Files: src/engine/external/md5/md5.c
+Copyright: 1999-2000, 2002 Aladdin Enterprises.
+           1999-2000, 2002 L. Peter Deutsch <ghost@aladdin.com>
+License: Zlib
+
+Files: src/engine/external/md5/md5.h
+Copyright: 1999, 2002 Aladdin Enterprises.
+           1999, 2002 L. Peter Deutsch <ghost@aladdin.com>
+License: Zlib
+
+Files: src/engine/external/pnglite/*
+Copyright: 2007 Daniel Karling <daniel.karling@gmail.com>
+License: Zlib
+
+Files: src/engine/external/wavpack/*
+Copyright: 1998-2006 Conifer Software
+License: BSD-3-clause
+
+Files: src/engine/external/wavpack/wavpack.h
+Copyright: 1998-2004 Conifer Software.
+License: BSD-3-clause
+
+Files: src/engine/external/zlib/compress.c
+Copyright: 1995-2005, 2014, 2016 Jean-loup Gailly
+           1995-2005, 2014, 2016 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/crc32.c
+Copyright: 1995-2006, 2010-2012, 2016 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/deflate.h
+       src/engine/external/zlib/infback.c
+       src/engine/external/zlib/inflate.h
+Copyright: 1995-2016 Jean-loup Gailly
+License: Zlib
+
+Files: src/engine/external/zlib/gzclose.c
+Copyright: 2004, 2010 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/gzguts.h
+       src/engine/external/zlib/gzread.c
+Copyright: 2004-2005, 2010-2013, 2016 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/gzlib.c
+       src/engine/external/zlib/gzwrite.c
+Copyright: 2004-2017 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/inffast.c
+       src/engine/external/zlib/inftrees.c
+Copyright: 1995-2017 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/inffast.h
+Copyright: 1995-2003, 2010 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/inftrees.h
+Copyright: 1995-2005, 2010 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/trees.c
+       src/engine/external/zlib/zutil.c
+Copyright: 1995-2017 Jean-loup Gailly
+License: Zlib
+
+Files: src/engine/external/zlib/zconf.h
+       src/engine/external/zlib/zutil.h
+Copyright: 1995-2016 Jean-loup Gailly
+           1995-2016 Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/zlib.h
+Copyright: 1995-2017 Jean-loup Gailly
+           1995-2017 Mark Adler
+License: Zlib
+
+Files: src/game/client/components/ghost.cpp
+       src/game/client/components/ghost.h
+Copyright: Rajh
+           Redix
+           Sushi
+License: Zlib
+
+Files: src/game/client/components/race_demo.cpp
+       src/game/client/components/race_demo.h
+Copyright: Redix
+           Sushi
+License: Zlib
+
+Files: src/game/ddracecommands.h
+       src/game/server/ddracechat.h
+       src/game/server/ddracecommands.cpp
+       src/game/server/entities/door.cpp
+       src/game/server/entities/door.h
+       src/game/server/entities/dragger.cpp
+       src/game/server/entities/dragger.h
+       src/game/server/entities/light.cpp
+       src/game/server/entities/light.h
+       src/game/server/entities/plasma.cpp
+       src/game/server/entities/plasma.h
+       src/game/server/gamemodes/DDRace.cpp
+       src/game/server/gamemodes/DDRace.h
+       src/game/server/gamemodes/gamemode.h
+       src/game/server/teams.h
+       src/game/teamscore.cpp
+       src/game/teamscore.h
+Copyright: Shereef Marzouk <info@shereef.net>
+License: Zlib
+
+Files: src/game/server/score/file_score.cpp
+Files: src/game/server/score/file_score.h
+Copyright: Shereef Marzouk <info@shereef.net>
+           GreYFoX@GTi
+           2008 Rajh
+           2008 gregwar
+License: Zlib
+
+Files: src/game/server/score/sql_score.cpp
+Files: src/game/server/score/sql_score.h
+Copyright: Shereef Marzouk <info@shereef.net>
+           GreYFoX@GTi
+           Sushi
+License: Zlib
+
+Files: src/tools/map_replace_image.cpp
+Copyright: DDNet developers
+License: Zlib
 
 Files: debian/*
 Copyright: Jack Coulter <jscinoz@gmail.com>
            Felix Geyer <fgeyer@debian.org>
            2017 Yangfl <mmyangfl@gmail.com>
+License: Zlib
+
+Files: debian/patches/*
+Copyright: 2017 Yangfl <mmyangfl@gmail.com>
 License: Zlib
 
 License: Zlib
@@ -395,3 +560,67 @@ License: CC-BY-SA-3.0
      this trademark restriction does not form part of the License.
  .
      Creative Commons may be contacted at https://creativecommons.org/.
+
+License: LGPL-2.1
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License version 2.1 as published by the Free Software Foundation.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE HOLDERS OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE HOLDERS OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
