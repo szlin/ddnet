@@ -1,3 +1,13 @@
+ddnet (10.8.6-2) unstable; urgency=medium
+
+  [ Yangfl]
+  * Update copyright
+
+  [ SZ Lin (林上智) ]
+  * Clean up copyright
+
+ -- SZ Lin (林上智) <szlin@debian.org>  Fri, 29 Sep 2017 10:50:32 +0800
+
 ddnet (10.8.6-1) unstable; urgency=medium
 
   * Initial release (Closes: #794166)
