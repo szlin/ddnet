@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders:
  Boyuan Yang <073plan@gmail.com>,
- Yangfl <mmyangfl@gmail.com>
+ Yangfl <mmyangfl@gmail.com>,
+ SZ Lin (林上智) <szlin@debian.org>
 Build-Depends:
  debhelper (>= 10),
  cmake,
