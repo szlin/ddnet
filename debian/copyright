@@ -54,14 +54,8 @@ Files: src/engine/external/libwebsockets/sha-1.c
 Copyright: 1995-1997, 1998 WIDE Project.
 License: BSD-3-clause
 
-Files: src/engine/external/md5/md5.c
-Copyright: 1999-2000, 2002 Aladdin Enterprises.
-           1999-2000, 2002 L. Peter Deutsch <ghost@aladdin.com>
-License: Zlib
-
-Files: src/engine/external/md5/md5.h
-Copyright: 1999, 2002 Aladdin Enterprises.
-           1999, 2002 L. Peter Deutsch <ghost@aladdin.com>
+Files: src/engine/external/md5/*
+Copyright: Aladdin Enterprises, L. Peter Deutsch <ghost@aladdin.com>
 License: Zlib
 
 Files: src/engine/external/pnglite/*
@@ -69,69 +63,36 @@ Copyright: 2007 Daniel Karling <daniel.karling@gmail.com>
 License: Zlib
 
 Files: src/engine/external/wavpack/*
-Copyright: 1998-2006 Conifer Software
+Copyright: 1998-2004 Conifer Software
 License: BSD-3-clause
-
-Files: src/engine/external/wavpack/wavpack.h
-Copyright: 1998-2004 Conifer Software.
-License: BSD-3-clause
-
-Files: src/engine/external/zlib/compress.c
-Copyright: 1995-2005, 2014, 2016 Jean-loup Gailly
-           1995-2005, 2014, 2016 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/crc32.c
-Copyright: 1995-2006, 2010-2012, 2016 Mark Adler
-License: Zlib
 
 Files: src/engine/external/zlib/deflate.h
        src/engine/external/zlib/infback.c
        src/engine/external/zlib/inflate.h
-Copyright: 1995-2016 Jean-loup Gailly
-License: Zlib
-
-Files: src/engine/external/zlib/gzclose.c
-Copyright: 2004, 2010 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/gzguts.h
-       src/engine/external/zlib/gzread.c
-Copyright: 2004-2005, 2010-2013, 2016 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/gzlib.c
-       src/engine/external/zlib/gzwrite.c
-Copyright: 2004-2017 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/inffast.c
-       src/engine/external/zlib/inftrees.c
-Copyright: 1995-2017 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/inffast.h
-Copyright: 1995-2003, 2010 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/inftrees.h
-Copyright: 1995-2005, 2010 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/trees.c
+       src/engine/external/zlib/trees.c
        src/engine/external/zlib/zutil.c
-Copyright: 1995-2017 Jean-loup Gailly
+Copyright: Jean-loup Gailly
 License: Zlib
 
-Files: src/engine/external/zlib/zconf.h
+Files: src/engine/external/zlib/crc32.c
+       src/engine/external/zlib/gzclose.c
+       src/engine/external/zlib/gzguts.h
+       src/engine/external/zlib/gzread.c
+       src/engine/external/zlib/gzlib.c
+       src/engine/external/zlib/gzwrite.c
+       src/engine/external/zlib/crc32.c
+       src/engine/external/zlib/inffast.c
+       src/engine/external/zlib/inftrees.h
+       src/engine/external/zlib/inftrees.c
+       src/engine/external/zlib/inffast.h
+Copyright: Mark Adler
+License: Zlib
+
+Files: src/engine/external/zlib/compress.c
+       src/engine/external/zlib/zconf.h
        src/engine/external/zlib/zutil.h
-Copyright: 1995-2016 Jean-loup Gailly
-           1995-2016 Mark Adler
-License: Zlib
-
-Files: src/engine/external/zlib/zlib.h
-Copyright: 1995-2017 Jean-loup Gailly
-           1995-2017 Mark Adler
+       src/engine/external/zlib/zlib.h
+Copyright: Jean-loup Gailly, Mark Adler
 License: Zlib
 
 Files: src/game/client/components/ghost.cpp
@@ -168,7 +129,7 @@ Copyright: Shereef Marzouk <info@shereef.net>
 License: Zlib
 
 Files: src/game/server/score/file_score.cpp
-Files: src/game/server/score/file_score.h
+       src/game/server/score/file_score.h
 Copyright: Shereef Marzouk <info@shereef.net>
            GreYFoX@GTi
            2008 Rajh
@@ -176,7 +137,7 @@ Copyright: Shereef Marzouk <info@shereef.net>
 License: Zlib
 
 Files: src/game/server/score/sql_score.cpp
-Files: src/game/server/score/sql_score.h
+       src/game/server/score/sql_score.h
 Copyright: Shereef Marzouk <info@shereef.net>
            GreYFoX@GTi
            Sushi
@@ -190,6 +151,7 @@ Files: debian/*
 Copyright: Jack Coulter <jscinoz@gmail.com>
            Felix Geyer <fgeyer@debian.org>
            2017 Yangfl <mmyangfl@gmail.com>
+           2017 SZ Lin (林上智) <szlin@debian.org>
 License: Zlib
 
 Files: debian/patches/*
